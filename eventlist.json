@@ -11,67 +11,62 @@
 		"karmatype": "Bad"
 	},
 	{
-		"abr": "clearweather",
+		"abr": "klareswetter",
 		"price": 400,
 		"karmatype": "Good"
 	},
 	{
-		"abr": "rain",
+		"abr": "regen",
 		"price": 350,
 		"karmatype": "Good"
 	},
 	{
-		"abr": "vomitrain",
+		"abr": "kotzeregen",
 		"price": 650,
 		"karmatype": "Neutral"
 	},
 	{
-		"abr": "foggyrain",
+		"abr": "nebelregen",
 		"price": 300,
 		"karmatype": "Neutral"
 	},
 	{
-		"abr": "rainythunderstorm",
+		"abr": "regengewitter",
 		"price": 250,
 		"karmatype": "Neutral"
 	},
 	{
-		"abr": "drythunderstorm",
+		"abr": "trockenesgewitter",
 		"price": 450,
 		"karmatype": "Bad"
 	},
 	{
-		"abr": "snowgentle",
+		"abr": "leichterschnee",
 		"price": 350,
 		"karmatype": "Neutral"
 	},
 	{
-		"abr": "snowhard",
+		"abr": "harterschnee",
 		"price": 450,
 		"karmatype": "Bad"
 	},
 	{
-		"abr": "fog",
+		"abr": "nebel",
 		"price": 300,
 		"karmatype": "Neutral"
 	},
 	{
-		"abr": "heatwave",
+		"abr": "hitzewelle",
 		"price": 750,
 		"karmatype": "Bad"
 	},
 	{
-		"abr": "flashstorm",
-		"price": 400,
-		"karmatype": "Bad"
-	},
-	{
-		"abr": "coldsnap",
+		"abr": "kaelteeinbruch",
 		"price": 800,
 		"karmatype": "Bad"
 	},
 	{
-		"abr": "solarflare",
+		"abr": "sonneneruption",
 		"price": 500,
 		"karmatype": "Bad"
 	},
@@ -81,42 +76,42 @@
 		"karmatype": "Bad"
 	},
 	{
-		"abr": "toxicfallout",
+		"abr": "giftigerregen",
 		"price": 6500,
 		"karmatype": "Doom"
 	},
 	{
-		"abr": "volcanicwinter",
+		"abr": "vulkanischerwinter",
 		"price": 3200,
 		"karmatype": "Doom"
 	},
 	{
-		"abr": "eclipse",
+		"abr": "sonnenfinsternis",
 		"price": 450,
 		"karmatype": "Bad"
 	},
 	{
-		"abr": "aurora",
+		"abr": "polarlicht",
 		"price": 200,
 		"karmatype": "Good"
 	},
 	{
-		"abr": "blight",
+		"abr": "Faeulnis",
 		"price": 700,
 		"karmatype": "Bad"
 	},
 	{
-		"abr": "refugeechased",
+		"abr": "gejagterfluechtling",
 		"price": 650,
 		"karmatype": "Neutral"
 	},
 	{
-		"abr": "animaltame",
+		"abr": "tierzaehmen",
 		"price": 150,
 		"karmatype": "Good"
 	},
 	{
-		"abr": "resourcepodcrash",
+		"abr": "Ressourcendrop",
 		"price": 300,
 		"karmatype": "Good"
 	},
@@ -126,7 +121,7 @@
 		"karmatype": "Good"
 	},
 	{
-		"abr": "tradercaravan",
+		"abr": "handelskarawane",
 		"price": 275,
 		"karmatype": "Good"
 	},
@@ -146,7 +141,7 @@
 		"karmatype": "Good"
 	},
 	{
-		"abr": "madanimal",
+		"abr": "verruecktestier",
 		"price": 200,
 		"karmatype": "Bad"
 	},
@@ -161,22 +156,22 @@
 		"karmatype": "Good"
 	},
 	{
-		"abr": "ambrosiasprout",
+		"abr": "ambrosiahein",
 		"price": 150,
 		"karmatype": "Good"
 	},
 	{
-		"abr": "herdmigration",
+		"abr": "herdenwanderung",
 		"price": 200,
 		"karmatype": "Good"
 	},
 	{
-		"abr": "farmanimals",
+		"abr": "nutztiere",
 		"price": 400,
 		"karmatype": "Good"
 	},
 	{
-		"abr": "wildman",
+		"abr": "wildermensch",
 		"price": 300,
 		"karmatype": "Good"
 	},
@@ -191,7 +186,7 @@
 		"karmatype": "Good"
 	},
 	{
-		"abr": "travelergroup",
+		"abr": "reisegruppe",
 		"price": 80,
 		"karmatype": "Good"
 	},
@@ -211,7 +206,7 @@
 		"karmatype": "Good"
 	},
 	{
-		"abr": "alphabeavers",
+		"abr": "alphabiber",
 		"price": 600,
 		"karmatype": "Bad"
 	},
@@ -226,7 +221,7 @@
 		"karmatype": "Bad"
 	},
 	{
-		"abr": "militaryaid",
+		"abr": "militaerunterstuetzung",
 		"price": 700,
 		"karmatype": "Good"
 	},
@@ -236,12 +231,7 @@
 		"karmatype": "Bad"
 	},
 	{
-		"abr": "dropraid",
-		"price": 1500,
-		"karmatype": "Bad"
-	},
-	{
-		"abr": "sapperraid",
+		"abr": "raid",
 		"price": 1500,
 		"karmatype": "Bad"
 	},
@@ -256,22 +246,22 @@
 		"karmatype": "Bad"
 	},
 	{
-		"abr": "infestation",
+		"abr": "infektion",
 		"price": 2500,
 		"karmatype": "Bad"
 	},
 	{
-		"abr": "manhunterpack",
+		"abr": "menschenjaegerrudel",
 		"price": 1500,
 		"karmatype": "Bad"
 	},
 	{
-		"abr": "predators",
+		"abr": "raubtiere",
 		"price": 2500,
 		"karmatype": "Bad"
 	},
 	{
-		"abr": "randomdisease",
+		"abr": "randomkrankheit",
 		"price": 1000,
 		"karmatype": "Bad"
 	},
@@ -281,12 +271,12 @@
 		"karmatype": "Bad"
 	},
 	{
-		"abr": "reviveanypawn",
+		"abr": "reviveanybewohner",
 		"price": 1200,
 		"karmatype": "Good"
 	},
 	{
-		"abr": "pawn",
+		"abr": "bewohner",
 		"price": 1500,
 		"karmatype": "Good"
 	},
@@ -306,27 +296,27 @@
 		"karmatype": "Good"
 	},
 	{
-		"abr": "genderswap",
+		"abr": "geschlechtertausch",
 		"price": 600,
 		"karmatype": "Neutral"
 	},
 	{
-		"abr": "prisoner",
+		"abr": "gefangener",
 		"price": 800,
 		"karmatype": "Good"
 	},
 	{
-		"abr": "visitcolony",
+		"abr": "koloniebesuchen",
 		"price": 300,
 		"karmatype": "Good"
 	},
 	{
-		"abr": "berescued",
+		"abr": "rettung",
 		"price": 900,
 		"karmatype": "Good"
 	},
 	{
-		"abr": "randominspire",
+		"abr": "randominspiration",
 		"price": 450,
 		"karmatype": "Good"
 	},
@@ -336,10 +326,10 @@
 		"karmatype": "Neutral"
 	},
 	{
-		"abr": "hodlbotvote",
+		"abr": "vote",
 		"price": 600,
 		"karmatype": "Neutral"
 	}
 	],
-	"total": 68
+	"total": 66
 }
