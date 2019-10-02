@@ -40,7 +40,7 @@
             <div class="container">
                 <h1 class="display-3">TwitchToolkit</h1>
                 <p>	Es handelt sich um eine Mod (von hodlhodl), welche Story Entscheidungsmöglichkeiten mittels Chat-Votes integriert. Dabei sammeln Zuschauer mit der Zeit Geld, welches sie schließlich nutzen können um Items und Events im Spiel zu kaufen.</p>
-                <table>
+                <table class="table-hover">
 					<tr><td>!bal</td><td>Kontostand und Karma-Wert prüfen</td></tr>
 					<tr><td>!kaufen</td><td>Syntax: !kaufen bier 6 - Kaufe Items oder Events</td></tr>
 					<tr><td>!wasistkarma</td><td>Kurze Erklärung zum Karma-System</td></tr>
@@ -285,7 +285,7 @@
         $.getJSON(traitListURL, function(data) {
             var options = {
                 valueNames: ['abr', 'category'],
-                item: '<tr><td class="abr" scope="row"></td><td class="category"></td>'
+                item: '<tr><td class="abr" scope="row"></td><td class="category"></td></tr>'
             };
 
             var traitData = [];
