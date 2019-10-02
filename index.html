@@ -14,7 +14,7 @@
     <script type="text/javascript">
         const itemListURL = "https://raw.githubusercontent.com/Kiloler/Kiloler/master/itemlist.json";
         const eventListURL = "https://raw.githubusercontent.com/Kiloler/Kiloler/master/eventlist.json";
-		const traitListURL = "https://raw.githubusercontent.com/Kiloler/Kiloler.github.io/master/Traits.json";
+		const traitListURL = "https://raw.githubusercontent.com/Kiloler/Kiloler.github.io/master/traitlist.json";
     </script>
 </head>
 
@@ -273,6 +273,21 @@
             });
 
             eventList = new List('events', options, eventData);
+        });
+		
+		let eventList = null;
+        $.getJSON(traitListURL, function(data) {
+            var options = {
+                valueNames: ['abr', 'category'],
+                item: '<tr><td class="abr" scope="row"></td><td class="category"></td>'
+            };
+
+            var traitData = [];
+            $.each(data.traits, function(index, value) {
+                traitData.push(value);
+            });
+
+            traitList = new List('traits', options, traitData);
         });
 
         $("#item-price-min").keyup(function() {
