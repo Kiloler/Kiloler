@@ -166,14 +166,14 @@
                                 <button type="button" class="btn btn-primary sort" data-sort="abr">
                                     A - Z
                                 </button>
-                                <button type="button" class="btn btn-primary sort" data-sort="category">
+                                <button type="button" class="btn btn-primary sort" data-sort="category2">
                                     Kategorie
                                 </button>
                             </p>
                             <table class="table traits">
                                 <tr>
                                     <th scope="col" class="sort" data-sort="abr">Name</th>
-                                    <th scope="col" class="sort" data-sort="category">Kategorie</th>
+                                    <th scope="col" class="sort" data-sort="category2">Kategorie</th>
                                 </tr>
                                 <tbody class="list">
                                 </tbody>
@@ -284,8 +284,8 @@
 		let traitList = null;
         $.getJSON(traitListURL, function(data) {
             var options = {
-                valueNames: ['abr', 'category'],
-                item: '<tr><td class="abr" scope="row"></td><td class="category"></td></tr>'
+                valueNames: ['abr', 'category2'],
+                item: '<tr><td class="abr" scope="row"></td><td class="category2"></td></tr>'
             };
 
             var traitData = [];
