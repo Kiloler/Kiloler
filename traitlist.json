@@ -2,231 +2,231 @@
 		"traits" : [
 		{
 			"abr": "Nudist",
-			"category2": "Allgemein"
+			"category": "Allgemein"
 		},
 		{
 			"abr": "Blutrünstig",
-			"category2": "Allgemein"
+			"category": "Allgemein"
 		},
 		{
 			"abr": "Freundlich",
-			"category2": "Allgemein"
+			"category": "Allgemein"
 		},
 		{
 			"abr": "Psychopath",
-			"category2": "Allgemein"
+			"category": "Allgemein"
 		},
 		{
 			"abr": "Kannibale",
-			"category2": "Allgemein"
+			"category": "Allgemein"
 		},
 		{
 			"abr": "Aufreibend",
-			"category2": "Allgemein"
+			"category": "Allgemein"
 		},
 		{
 			"abr": "Raufbold",
-			"category2": "Allgemein"
+			"category": "Allgemein"
 		},
 		{
 			"abr": "Masochist",
-			"category2": "Allgemein"
+			"category": "Allgemein"
 		},
 		{
 			"abr": "Nachteule",
-			"category2": "Allgemein"
+			"category": "Allgemein"
 		},
 		{
 			"abr": "Faul",
-			"category2": "Fleiß"
+			"category": "Fleiß"
 		},
 		{
 			"abr": "Stubenhocker",
-			"category2": "Allgemein"
+			"category": "Allgemein"
 		},
 		{
 			"abr": "Psychisch hochsensibel",
-			"category2": "Psych. Sensibilität"
+			"category": "Psych. Sensibilität"
 		},
 		{
 			"abr": "Starkes Immunsystem",
-			"category2": "Immunsystem"
+			"category": "Immunsystem"
 		},
 		{
 			"abr": "Weichei",
-			"category2": "Allgemein"
+			"category": "Allgemein"
 		},
 		{
 			"abr": "Jogger",
-			"category2": "Schnelligkeit"
+			"category": "Schnelligkeit"
 		},
 		{
 			"abr": "Misogynie",
-			"category2": "Allgemein"
+			"category": "Allgemein"
 		},
 		{
 			"abr": "Wunderschön",
-			"category2": "Schönheit"
+			"category": "Schönheit"
 		},
 		{
 			"abr": "Träge",
-			"category2": "Fleiß"
+			"category": "Fleiß"
 		},
 		{
 			"abr": "Sorgfältiger Schütze",
-			"category2": "Schießgenauigkeit"
+			"category": "Schießgenauigkeit"
 		},
 		{
 			"abr": "Misandrie",
-			"category2": "Allgemein"
+			"category": "Allgemein"
 		},
 		{
 			"abr": "Stark Neurotisch",
-			"category2": "Neurotisch"
+			"category": "Neurotisch"
 		},
 		{
 			"abr": "Psychisch abgestumpgt",
-			"category2": "Psych. Sensibilität"
+			"category": "Psych. Sensibilität"
 		},
 		{
 			"abr": "Unerschütterlich",
-			"category2": "Allgemein"
+			"category": "Allgemein"
 		},
 		{
 			"abr": "Rauschmittel-Faszination",
-			"category2": "Drogen"
+			"category": "Drogen"
 		},
 		{
 			"abr": "Gutes Gedächtnis",
-			"category2": "Allgemein"
+			"category": "Allgemein"
 		},
 		{
 			"abr": "Rauschmittel-Interesse",
-			"category2": "Drogen"
+			"category": "Drogen"
 		},
 		{
 			"abr": "Schneller Geher",
-			"category2": "Schnelligkeit"
+			"category": "Schnelligkeit"
 		},
 		{
 			"abr": "Nervige Stimme",
-			"category2": "Allgemein"
+			"category": "Allgemein"
 		},
 		{
 			"abr": "Pyromane",
-			"category2": "Allgemein"
+			"category": "Allgemein"
 		},
 		{
 			"abr": "Gruselige Atmung",
-			"category2": "Allgemein"
+			"category": "Allgemein"
 		},
 		{
 			"abr": "Asket",
-			"category2": "Allgemein"
+			"category": "Allgemein"
 		},
 		{
 			"abr": "Pessimist",
-			"category2": "Stimmung"
+			"category": "Stimmung"
 		},
 		{
 			"abr": "Transhumanist",
-			"category2": "Allgemein"
+			"category": "Allgemein"
 		},
 		{
 			"abr": "Sanguiniker",
-			"category2": "Allgemein"
+			"category": "Allgemein"
 		},
 		{
 			"abr": "Eiserner Wille",
-			"category2": "Nerven"
+			"category": "Nerven"
 		}, 
 		{
 			"abr": "Lahme Ente",
-			"category2": "Schnelligkeit"
+			"category": "Schnelligkeit"
 		},
 		{
 			"abr": "Vielfraß",
-			"category2": "Allgemein"
+			"category": "Allgemein"
 		},
 		{
 			"abr": "Schneller Lerner",
-			"category2": "Allgemein"
+			"category": "Allgemein"
 		},
 		{
 			"abr": "Optimist",
-			"category2": "Stimmung"
+			"category": "Stimmung"
 		},
 		{
 			"abr": "Hart arbeitend",
-			"category2": "Fleiß"
+			"category": "Fleiß"
 		},
 		{
 			"abr": "Psychisch Taub",
-			"category2": "Psych. Sensibilität"
+			"category": "Psych. Sensibilität"
 		},
 		{
 			"abr": "Geschickt",
-			"category2": "Allgemein"
+			"category": "Allgemein"
 		},
 		{
 			"abr": "Nervös",
-			"category2": "Nerven"
+			"category": "Nerven"
 		},
 		{
 			"abr": "Extrem hässlich",
-			"category2": "Schönheit"
+			"category": "Schönheit"
 		},
 		{
 			"abr": "Habgierig",
-			"category2": "Allgemein"
+			"category": "Allgemein"
 		},
 		{
 			"abr": "Kurzschläfer",
-			"category2": "Allgemein"
+			"category": "Allgemein"
 		},
 		{
 			"abr": "Schießwütig",
-			"category2": "Schießgenauigkeit"
+			"category": "Schießgenauigkeit"
 		},
 		{
 			"abr": "Depressiv",
-			"category2": "Stimmung"
+			"category": "Stimmung"
 		},
 		{
 			"abr": "Zäh",
-			"category2": "Allgemein"
+			"category": "Allgemein"
 		},
 		{
 			"abr": "Abstinenzler",
-			"category2": "Drogen"
+			"category": "Drogen"
 		},
 		{
 			"abr": "Fleißig",
-			"category2": "Fleiß"
+			"category": "Fleiß"
 		},
 		{
 			"abr": "Standfest",
-			"category2": "Nerven"
+			"category": "Nerven"
 		},
 		{
 			"abr": "Zu Klug",
-			"category2": "Allgemein"
+			"category": "Allgemein"
 		},
 		{
 			"abr": "Neurotisch",
-			"category2": "Neurotisch"
+			"category": "Neurotisch"
 		},
 		{
 			"abr": "Hässlich",
-			"category2": "Schönheit"
+			"category": "Schönheit"
 		},
 		{
 			"abr": "Hübsch",
-			"category2": "Schönheit"
+			"category": "Schönheit"
 		},
 		{
 			"abr": "Psychisch Sensibel",
-			"category2": "Psych. Sensibilität"
+			"category": "Psych. Sensibilität"
 		}
 		],
 		"total": 57
