@@ -32,9 +32,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="https://www.twitch.tv/kiloler">Mein Stream</a>
                 </li>
-				<li class="nav-item">
-                    <a class="nav-link" href="einfuehrung.html">Einführung</a>
-                </li>
             </ul>
         </div>
     </nav>
@@ -45,7 +42,9 @@
                 <p>	Herzlich Willkommen in meinem Stream. Wie ich sehe hast du den Weg zu meiner Item/Event Liste gefunden. </p>
 				<p> Ich nutze die TwitchToolkit Mod von hodlhodl. Dabei handelt es sich um eine Mod, mit welcher man mit meinem Spiel interargieren kann. Mit der Zeit sammelt man Münzen, die genutzt werden können um Items oder Events in das Spiel zu senden. </p>
 				<p> Solltest etwas unklar bleiben, frag doch einfach nach. Keine Angst ich beiße nicht (aber 100% sicher bin ich mir da manchmal auch nicht).</p>
-            </div>
+				<p> Eine kleine Einfürhung erhaltet ihr, wenn ihr auf den nachfolgenden Button drückt.</p>
+				<a href="einfuehrung.html" class="btn btn-outline-info active btn-lg" role="button" aria-pressed="true" ng-class="{'active': (selected == '3')}" ng-click='selected=3'>Einführung</a>
+			</div>
         </div>
         <div ng-app='tabs' ng-controller='tabCtrl'>
             <div class="container">
@@ -54,28 +53,18 @@
                         <div class='tabs'>
                             <form>
                                 <div class="form-group">
-									<button class="btn btn-warning btn-lg" ng-class="{'active': (selected == '3')}" ng-click='selected=3'>
-										<b>Befehle</b>
-									</button>
+									<a href="befehle.html" class="btn btn-outline-secondary active btn-lg" role="button" aria-pressed="true" ng-class="{'active': (selected == '3')}" ng-click='selected=3'>Befehle</a>
                                     <button class="btn btn-success btn-lg" ng-class="{'active': (selected == '1')}" ng-click='selected=1'>
                                         <b>Items</b>
                                     </button>
                                     <button class="btn btn-danger btn-lg" ng-class="{'active': (selected == '2')}" ng-click='selected=2'>
                                         <b>Events</b>
                                     </button>
-									<button class="btn btn-success btn-lg" ng-class="{'active': (selected == '4')}" ng-click='selected=4'>
+									<button class="btn btn-info" ng-class="{'active': (selected == '3')}" ng-click='selected=3'>
                                         <b>Traits</b>
                                     </button>
                                 </div>
-                                <div class="form-group row">
-                                    <label class="col-sm-2 col-form-label" for="">Preisspanne:</label>
-                                    <div class="col-sm-2">
-                                        <input type="number" class="form-control" id="item-price-min" placeholder="0">
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <input type="number" class="form-control" id="item-price-max" placeholder="100000">
-                                    </div>
-                                </div>
+                                
                             </form>
                         </div>
                     </div>
@@ -83,13 +72,26 @@
                 <div class="row" ng-show='selected == 1'>
                     <div class="col-md-12">
                         <div id="items">
-                            <div class="input-group input-group-sm mb-3">
+                            <p> 
+							<div class="form-group row">
+                                    <label class="col-sm-2 col-form-label" for="">Preisspanne:</label>
+                                    <div class="col-sm-2">
+                                        <input type="number" class="form-control" id="item-price-min" placeholder="0">
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <input type="number" class="form-control" id="item-price-max" placeholder="10000">
+                                    </div>
+                            </div>
+							</p>
+							
+							<div class="input-group input-group-sm mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="inputGroup-sizing-sm">Suche</span>
                                 </div>
                                 <input type="text" class="form-control search" aria-label="Search" aria-describedby="inputGroup-sizing-sm">
                             </div>
                             <p>
+							
                                 <button type="button" class="btn btn-primary sort" data-sort="abr">
                                     A - Z
                                 </button>
@@ -99,6 +101,7 @@
 								<button type="button" class="btn btn-primary sort" data-sort="category">
                                     Kategorie
                                 </button>
+								
                             </p>
                             <table class="table items">
                                 <tr>
@@ -115,7 +118,18 @@
                 <div class="row" ng-show='selected == 2'>
                     <div class="col-md-12">
                         <div id="events">
-                            <div class="input-group input-group-sm mb-3">
+                            <p> 
+							<div class="form-group row">
+                                    <label class="col-sm-2 col-form-label" for="">Preisspanne:</label>
+                                    <div class="col-sm-2">
+                                        <input type="number" class="form-control" id="item-price-min" placeholder="0">
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <input type="number" class="form-control" id="item-price-max" placeholder="10000">
+                                    </div>
+                            </div>
+							</p>
+							<div class="input-group input-group-sm mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="inputGroup-sizing-sm">Suche</span>
                                 </div>
@@ -130,7 +144,7 @@
                                 </button>
                                 <button type="button" class="btn btn-primary sort" data-sort="karmatype">
                                     Karma
-                                </button>
+                                </button>								
                             </p>
                             <table class="table events">
                                 <tr>
@@ -145,36 +159,6 @@
                     </div>
                 </div>
 				<div class="row" ng-show='selected == 3'>
-                    <div class="col-md-12">
-                        <div id="Befehle">
-                            <div class="input-group input-group-sm mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="inputGroup-sizing-sm">Suche</span>
-                                </div>
-                                <input type="text" class="form-control search" aria-label="Search" aria-describedby="inputGroup-sizing-sm">
-                            </div>
-							<h1 class="display-1">TwitchToolkit</h1>
-							<p> Hier finden sie Informationen zu den verschiedenen Befehlen </p>
-                            <p>
-                                <ul class="list-group">
-									<li class="list-group-item"><b>!bal</b> - Kontostand und Karma-Wert prüfen</li>
-									<li class="list-group-item"><b>!kaufen</b> - Syntax: !kaufen bier 6 - Kaufe Items oder Events</li>
-									<li class="list-group-item"><b>!wasistkarma</b> - Kurze Erklärung zum Karma-System</li>
-									<li class="list-group-item"><b>!modsettings</b> - gives user info on how many coins are being earned and global settings</li>
-									<li class="list-group-item"><b>!mods</b> - Listet meine aktuell genutzten Mods auf</li>
-									<li class="list-group-item"><b>!schenke</b> - Syntax: !schenke @username 100 - Schenke einem anderen Zuschauer Geld</li>
-									<li class="list-group-item"><b>!joinqueue</b> - Setzt dich auf die Liste einem Bewohner deinen Namen zu geben</li>
-									<li class="list-group-item"><b>!mypawnstory</b> - Zeigt die Background-Story des Bewohners an</li>
-									<li class="list-group-item"><b>!mypawnskills</b> - Zeigt Informationen über die Skills</li>
-									<li class="list-group-item"><b>!mypawngear</b> - Zeigt Informationen über die Ausrüstung</li>
-									<li class="list-group-item"><b>!mypawnhealth</b> - Zeigt Informationen über den Gesundheitszustand</li>
-									<li class="list-group-item"><b>!mypawnbody</b> - Listet alle beschädigte oder ausgetauschte Körperteile auf</li>
-								</ul>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-				<div class="row" ng-show='selected == 4'>
                     <div class="col-md-12">
                         <div id="traits">
                             <div class="input-group input-group-sm mb-3">
@@ -220,8 +204,6 @@
             <p class="float-right">
                 <a href="#">Zum Anfang</a>
             </p>
-            <p>Album example is © Bootstrap, but please download and customize it for yourself!</p>
-            <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
         </div>
     </footer>
     <!-- Optional JavaScript -->
