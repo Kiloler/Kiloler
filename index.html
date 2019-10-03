@@ -40,20 +40,7 @@
             <div class="container">
                 <h1 class="display-3">TwitchToolkit</h1>
                 <p>	Es handelt sich um eine Mod (von hodlhodl), welche Story Entscheidungsmöglichkeiten mittels Chat-Votes integriert. Dabei sammeln Zuschauer mit der Zeit Geld, welches sie schließlich nutzen können um Items und Events im Spiel zu kaufen.</p>
-				<ul class="list-group">
-                    <li class="list-group-item"><b>!bal</b> - Kontostand und Karma-Wert prüfen</li>
-                    <li class="list-group-item"><b>!kaufen</b> - Syntax: !kaufen bier 6 - Kaufe Items oder Events</li>
-                    <li class="list-group-item"><b>!wasistkarma</b> - Kurze Erklärung zum Karma-System</li>
-                    <li class="list-group-item"><b>!modsettings</b> - gives user info on how many coins are being earned and global settings</li>
-                    <li class="list-group-item"><b>!mods</b> - Listet meine aktuell genutzten Mods auf</li>
-                    <li class="list-group-item"><b>!schenke</b> - Syntax: !schenke @username 100 - Schenke einem anderen Zuschauer Geld</li>
-                    <li class="list-group-item"><b>!joinqueue</b> - Setzt dich auf die Liste einem Bewohner deinen Namen zu geben</li>
-                    <li class="list-group-item"><b>!mypawnstory</b> - Zeigt die Background-Story des Bewohners an</li>
-                    <li class="list-group-item"><b>!mypawnskills</b> - Zeigt Informationen über die Skills</li>
-					<li class="list-group-item"><b>!mypawngear</b> - Zeigt Informationen über die Ausrüstung</li>
-					<li class="list-group-item"><b>!mypawnhealth</b> - Zeigt Informationen über den Gesundheitszustand</li>
-					<li class="list-group-item"><b>!mypawnbody</b> - Listet alle beschädigte oder ausgetauschte Körperteile auf</li>
-                </ul>
+				
             </div>
         </div>
         <div ng-app='tabs' ng-controller='tabCtrl'>
@@ -70,6 +57,9 @@
                                         <b>Events</b>
                                     </button>
 									<button class="btn btn-success" ng-class="{'active': (selected == '3')}" ng-click='selected=3'>
+                                        <b>Befehle</b>
+                                    </button>
+									<button class="btn btn-success" ng-class="{'active': (selected == '4')}" ng-click='selected=4'>
                                         <b>Traits</b>
                                     </button>
                                 </div>
@@ -151,6 +141,36 @@
                     </div>
                 </div>
 				<div class="row" ng-show='selected == 3'>
+                    <div class="col-md-12">
+                        <div id="Befehle">
+                            <div class="input-group input-group-sm mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-sm">Suche</span>
+                                </div>
+                                <input type="text" class="form-control search" aria-label="Search" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+							<h1 class="display-1">TwitchToolkit</h1>
+							<p> Hier finden sie Informationen zu den verschiedenen Befehlen </p>
+                            <p>
+                                <ul class="list-group">
+									<li class="list-group-item"><b>!bal</b> - Kontostand und Karma-Wert prüfen</li>
+									<li class="list-group-item"><b>!kaufen</b> - Syntax: !kaufen bier 6 - Kaufe Items oder Events</li>
+									<li class="list-group-item"><b>!wasistkarma</b> - Kurze Erklärung zum Karma-System</li>
+									<li class="list-group-item"><b>!modsettings</b> - gives user info on how many coins are being earned and global settings</li>
+									<li class="list-group-item"><b>!mods</b> - Listet meine aktuell genutzten Mods auf</li>
+									<li class="list-group-item"><b>!schenke</b> - Syntax: !schenke @username 100 - Schenke einem anderen Zuschauer Geld</li>
+									<li class="list-group-item"><b>!joinqueue</b> - Setzt dich auf die Liste einem Bewohner deinen Namen zu geben</li>
+									<li class="list-group-item"><b>!mypawnstory</b> - Zeigt die Background-Story des Bewohners an</li>
+									<li class="list-group-item"><b>!mypawnskills</b> - Zeigt Informationen über die Skills</li>
+									<li class="list-group-item"><b>!mypawngear</b> - Zeigt Informationen über die Ausrüstung</li>
+									<li class="list-group-item"><b>!mypawnhealth</b> - Zeigt Informationen über den Gesundheitszustand</li>
+									<li class="list-group-item"><b>!mypawnbody</b> - Listet alle beschädigte oder ausgetauschte Körperteile auf</li>
+								</ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+				<div class="row" ng-show='selected == 4'>
                     <div class="col-md-12">
                         <div id="traits">
                             <div class="input-group input-group-sm mb-3">
