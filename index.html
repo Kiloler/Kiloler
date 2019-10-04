@@ -91,7 +91,6 @@
                                 <input type="text" class="form-control search" aria-label="Search" aria-describedby="inputGroup-sizing-sm">
                             </div>
                             <p>
-							
                                 <button type="button" class="btn btn-primary sort" data-sort="abr">
                                     A - Z
                                 </button>
@@ -102,7 +101,30 @@
                                     Kategorie
                                 </button>
 								
-                            </p>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '16')}" ng-click='selected=16'>
+                                    <b>Sonstiges</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '15')}" ng-click='selected=15'>
+                                    <b>Möbel</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '14')}" ng-click='selected=14'>
+                                    <b>Tiere</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '13')}" ng-click='selected=13'>
+                                    <b>Medizin</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '12')}" ng-click='selected=12'>
+                                    <b>Waffen</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '11')}" ng-click='selected=11'>
+                                    <b>Ausrüstung</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '10')}" ng-click='selected=10'>
+                                    <b>Nahrung</b>
+                                </button>
+	
+								
+							</p>
                             <table class="table items">
                                 <tr>
                                     <th scope="col" class="sort" data-sort="abr">Name</th>
@@ -112,6 +134,7 @@
                                 <tbody class="list">
                                 </tbody>
                             </table>
+							
                         </div>
                     </div>
                 </div>
@@ -144,6 +167,18 @@
                                 </button>
                                 <button type="button" class="btn btn-primary sort" data-sort="karmatype">
                                     Karma
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '53')}" ng-click='selected=53'>
+                                    <b>Extrem</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '52')}" ng-click='selected=52'>
+                                    <b>Schlecht</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '51')}" ng-click='selected=51'>
+                                    <b>Neutral</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '50')}" ng-click='selected=50'>
+                                    <b>Gut</b>
                                 </button>								
                             </p>
                             <table class="table events">
@@ -186,6 +221,684 @@
                         </div>
                     </div>
                 </div>
+				
+				<div class="row" ng-show='selected == 10'>
+					<div class="col-md-12">
+						<div id="items10">
+							<p> 
+							<div class="form-group row">
+									<label class="col-sm-2 col-form-label" for="">Preisspanne:</label>
+									<div class="col-sm-2">
+										<input type="number" class="form-control" id="item-price-min" placeholder="0">
+									</div>
+									<div class="col-sm-2">
+										<input type="number" class="form-control" id="item-price-max" placeholder="10000">
+									</div>
+							</div>
+							</p>
+										
+							<div class="input-group input-group-sm mb-3">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="inputGroup-sizing-sm">Suche</span>
+								</div>
+								<input type="text" class="form-control search" aria-label="Search" aria-describedby="inputGroup-sizing-sm">
+							</div>
+							<p>
+								<button type="button" class="btn btn-primary sort" data-sort="abr">
+									A - Z
+								</button>
+								<button type="button" class="btn btn-primary sort" data-sort="price">
+									Preis
+								</button>
+								<button type="button" class="btn btn-primary sort" data-sort="category">
+									Kategorie
+								</button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '16')}" ng-click='selected=16'>
+                                    <b>Sonstiges</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '15')}" ng-click='selected=15'>
+                                    <b>Möbel</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '14')}" ng-click='selected=14'>
+                                    <b>Tiere</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '13')}" ng-click='selected=13'>
+                                    <b>Medizin</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '12')}" ng-click='selected=12'>
+                                    <b>Waffen</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '11')}" ng-click='selected=11'>
+                                    <b>Ausrüstung</b>
+                                </button>
+								<button class="btn btn-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '1')}" ng-click='selected=1'>
+                                    <b>Nahrung</b>
+                                </button>				
+							</p>
+							<table class="table items">
+								<tr>
+									<th scope="col" class="sort" data-sort="abr">Name</th>
+									<th scope="col" class="sort" data-sort="price">Preis</th>
+									<th scope="col" class="sort" data-sort="category">Kategorie</th>
+								</tr>
+								<tbody class="list">
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="row" ng-show='selected == 11'>
+					<div class="col-md-12">
+						<div id="items11">
+							<p> 
+							<div class="form-group row">
+									<label class="col-sm-2 col-form-label" for="">Preisspanne:</label>
+									<div class="col-sm-2">
+										<input type="number" class="form-control" id="item-price-min" placeholder="0">
+									</div>
+									<div class="col-sm-2">
+										<input type="number" class="form-control" id="item-price-max" placeholder="10000">
+									</div>
+							</div>
+							</p>
+										
+							<div class="input-group input-group-sm mb-3">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="inputGroup-sizing-sm">Suche</span>
+								</div>
+								<input type="text" class="form-control search" aria-label="Search" aria-describedby="inputGroup-sizing-sm">
+							</div>
+							<p>
+								<button type="button" class="btn btn-primary sort" data-sort="abr">
+									A - Z
+								</button>
+								<button type="button" class="btn btn-primary sort" data-sort="price">
+									Preis
+								</button>
+								<button type="button" class="btn btn-primary sort" data-sort="category">
+									Kategorie
+								</button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '16')}" ng-click='selected=16'>
+                                    <b>Sonstiges</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '15')}" ng-click='selected=15'>
+                                    <b>Möbel</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '14')}" ng-click='selected=14'>
+                                    <b>Tiere</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '13')}" ng-click='selected=13'>
+                                    <b>Medizin</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '12')}" ng-click='selected=12'>
+                                    <b>Waffen</b>
+                                </button>
+								<button class="btn btn-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '1')}" ng-click='selected=1'>
+                                    <b>Ausrüstung</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '10')}" ng-click='selected=10'>
+                                    <b>Nahrung</b>
+                                </button>				
+							</p>
+							<table class="table items">
+								<tr>
+									<th scope="col" class="sort" data-sort="abr">Name</th>
+									<th scope="col" class="sort" data-sort="price">Preis</th>
+									<th scope="col" class="sort" data-sort="category">Kategorie</th>
+								</tr>
+								<tbody class="list">
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="row" ng-show='selected == 12'>
+					<div class="col-md-12">
+						<div id="items12">
+							<p> 
+							<div class="form-group row">
+									<label class="col-sm-2 col-form-label" for="">Preisspanne:</label>
+									<div class="col-sm-2">
+										<input type="number" class="form-control" id="item-price-min" placeholder="0">
+									</div>
+									<div class="col-sm-2">
+										<input type="number" class="form-control" id="item-price-max" placeholder="10000">
+									</div>
+							</div>
+							</p>
+										
+							<div class="input-group input-group-sm mb-3">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="inputGroup-sizing-sm">Suche</span>
+								</div>
+								<input type="text" class="form-control search" aria-label="Search" aria-describedby="inputGroup-sizing-sm">
+							</div>
+							<p>
+								<button type="button" class="btn btn-primary sort" data-sort="abr">
+									A - Z
+								</button>
+								<button type="button" class="btn btn-primary sort" data-sort="price">
+									Preis
+								</button>
+								<button type="button" class="btn btn-primary sort" data-sort="category">
+									Kategorie
+								</button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '16')}" ng-click='selected=16'>
+                                    <b>Sonstiges</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '15')}" ng-click='selected=15'>
+                                    <b>Möbel</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '14')}" ng-click='selected=14'>
+                                    <b>Tiere</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '13')}" ng-click='selected=13'>
+                                    <b>Medizin</b>
+                                </button>
+								<button class="btn btn-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '1')}" ng-click='selected=1'>
+                                    <b>Waffen</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '11')}" ng-click='selected=11'>
+                                    <b>Ausrüstung</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '10')}" ng-click='selected=10'>
+                                    <b>Nahrung</b>
+                                </button>				
+							</p>
+							<table class="table items">
+								<tr>
+									<th scope="col" class="sort" data-sort="abr">Name</th>
+									<th scope="col" class="sort" data-sort="price">Preis</th>
+									<th scope="col" class="sort" data-sort="category">Kategorie</th>
+								</tr>
+								<tbody class="list">
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="row" ng-show='selected == 13'>
+					<div class="col-md-12">
+						<div id="items13">
+							<p> 
+							<div class="form-group row">
+									<label class="col-sm-2 col-form-label" for="">Preisspanne:</label>
+									<div class="col-sm-2">
+										<input type="number" class="form-control" id="item-price-min" placeholder="0">
+									</div>
+									<div class="col-sm-2">
+										<input type="number" class="form-control" id="item-price-max" placeholder="10000">
+									</div>
+							</div>
+							</p>
+										
+							<div class="input-group input-group-sm mb-3">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="inputGroup-sizing-sm">Suche</span>
+								</div>
+								<input type="text" class="form-control search" aria-label="Search" aria-describedby="inputGroup-sizing-sm">
+							</div>
+							<p>
+								<button type="button" class="btn btn-primary sort" data-sort="abr">
+									A - Z
+								</button>
+								<button type="button" class="btn btn-primary sort" data-sort="price">
+									Preis
+								</button>
+								<button type="button" class="btn btn-primary sort" data-sort="category">
+									Kategorie
+								</button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '16')}" ng-click='selected=16'>
+                                    <b>Sonstiges</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '15')}" ng-click='selected=15'>
+                                    <b>Möbel</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '14')}" ng-click='selected=14'>
+                                    <b>Tiere</b>
+                                </button>
+								<button class="btn btn-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '1')}" ng-click='selected=1'>
+                                    <b>Medizin</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '12')}" ng-click='selected=12'>
+                                    <b>Waffen</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '11')}" ng-click='selected=11'>
+                                    <b>Ausrüstung</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '10')}" ng-click='selected=10'>
+                                    <b>Nahrung</b>
+                                </button>				
+							</p>
+							<table class="table items">
+								<tr>
+									<th scope="col" class="sort" data-sort="abr">Name</th>
+									<th scope="col" class="sort" data-sort="price">Preis</th>
+									<th scope="col" class="sort" data-sort="category">Kategorie</th>
+								</tr>
+								<tbody class="list">
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="row" ng-show='selected == 14'>
+					<div class="col-md-12">
+						<div id="items14">
+							<p> 
+							<div class="form-group row">
+									<label class="col-sm-2 col-form-label" for="">Preisspanne:</label>
+									<div class="col-sm-2">
+										<input type="number" class="form-control" id="item-price-min" placeholder="0">
+									</div>
+									<div class="col-sm-2">
+										<input type="number" class="form-control" id="item-price-max" placeholder="10000">
+									</div>
+							</div>
+							</p>
+										
+							<div class="input-group input-group-sm mb-3">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="inputGroup-sizing-sm">Suche</span>
+								</div>
+								<input type="text" class="form-control search" aria-label="Search" aria-describedby="inputGroup-sizing-sm">
+							</div>
+							<p>
+								<button type="button" class="btn btn-primary sort" data-sort="abr">
+									A - Z
+								</button>
+								<button type="button" class="btn btn-primary sort" data-sort="price">
+									Preis
+								</button>
+								<button type="button" class="btn btn-primary sort" data-sort="category">
+									Kategorie
+								</button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '16')}" ng-click='selected=16'>
+                                    <b>Sonstiges</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '15')}" ng-click='selected=15'>
+                                    <b>Möbel</b>
+                                </button>
+								<button class="btn btn-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '1')}" ng-click='selected=1'>
+                                    <b>Tiere</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '13')}" ng-click='selected=13'>
+                                    <b>Medizin</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '12')}" ng-click='selected=12'>
+                                    <b>Waffen</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '11')}" ng-click='selected=11'>
+                                    <b>Ausrüstung</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '10')}" ng-click='selected=10'>
+                                    <b>Nahrung</b>
+                                </button>				
+							</p>
+							<table class="table items">
+								<tr>
+									<th scope="col" class="sort" data-sort="abr">Name</th>
+									<th scope="col" class="sort" data-sort="price">Preis</th>
+									<th scope="col" class="sort" data-sort="category">Kategorie</th>
+								</tr>
+								<tbody class="list">
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="row" ng-show='selected == 15'>
+					<div class="col-md-12">
+						<div id="items15">
+							<p> 
+							<div class="form-group row">
+									<label class="col-sm-2 col-form-label" for="">Preisspanne:</label>
+									<div class="col-sm-2">
+										<input type="number" class="form-control" id="item-price-min" placeholder="0">
+									</div>
+									<div class="col-sm-2">
+										<input type="number" class="form-control" id="item-price-max" placeholder="10000">
+									</div>
+							</div>
+							</p>
+										
+							<div class="input-group input-group-sm mb-3">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="inputGroup-sizing-sm">Suche</span>
+								</div>
+								<input type="text" class="form-control search" aria-label="Search" aria-describedby="inputGroup-sizing-sm">
+							</div>
+							<p>
+								<button type="button" class="btn btn-primary sort" data-sort="abr">
+									A - Z
+								</button>
+								<button type="button" class="btn btn-primary sort" data-sort="price">
+									Preis
+								</button>
+								<button type="button" class="btn btn-primary sort" data-sort="category">
+									Kategorie
+								</button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '16')}" ng-click='selected=16'>
+                                    <b>Sonstiges</b>
+                                </button>
+								<button class="btn btn-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '1')}" ng-click='selected=1'>
+                                    <b>Möbel</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '14')}" ng-click='selected=14'>
+                                    <b>Tiere</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '13')}" ng-click='selected=13'>
+                                    <b>Medizin</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '12')}" ng-click='selected=12'>
+                                    <b>Waffen</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '11')}" ng-click='selected=11'>
+                                    <b>Ausrüstung</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '10')}" ng-click='selected=10'>
+                                    <b>Nahrung</b>
+                                </button>				
+							</p>
+							<table class="table items">
+								<tr>
+									<th scope="col" class="sort" data-sort="abr">Name</th>
+									<th scope="col" class="sort" data-sort="price">Preis</th>
+									<th scope="col" class="sort" data-sort="category">Kategorie</th>
+								</tr>
+								<tbody class="list">
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="row" ng-show='selected == 16'>
+					<div class="col-md-12">
+						<div id="items16">
+							<p> 
+							<div class="form-group row">
+									<label class="col-sm-2 col-form-label" for="">Preisspanne:</label>
+									<div class="col-sm-2">
+										<input type="number" class="form-control" id="item-price-min" placeholder="0">
+									</div>
+									<div class="col-sm-2">
+										<input type="number" class="form-control" id="item-price-max" placeholder="10000">
+									</div>
+							</div>
+							</p>
+										
+							<div class="input-group input-group-sm mb-3">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="inputGroup-sizing-sm">Suche</span>
+								</div>
+								<input type="text" class="form-control search" aria-label="Search" aria-describedby="inputGroup-sizing-sm">
+							</div>
+							<p>
+								<button type="button" class="btn btn-primary sort" data-sort="abr">
+									A - Z
+								</button>
+								<button type="button" class="btn btn-primary sort" data-sort="price">
+									Preis
+								</button>
+								<button type="button" class="btn btn-primary sort" data-sort="category">
+									Kategorie
+								</button>
+								<button class="btn btn-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '1')}" ng-click='selected=1'>
+                                    <b>Sonstiges</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '15')}" ng-click='selected=15'>
+                                    <b>Möbel</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '14')}" ng-click='selected=14'>
+                                    <b>Tiere</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '13')}" ng-click='selected=13'>
+                                    <b>Medizin</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '12')}" ng-click='selected=12'>
+                                    <b>Waffen</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '11')}" ng-click='selected=11'>
+                                    <b>Ausrüstung</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '10')}" ng-click='selected=10'>
+                                    <b>Nahrung</b>
+                                </button>				
+							</p>
+							<table class="table items">
+								<tr>
+									<th scope="col" class="sort" data-sort="abr">Name</th>
+									<th scope="col" class="sort" data-sort="price">Preis</th>
+									<th scope="col" class="sort" data-sort="category">Kategorie</th>
+								</tr>
+								<tbody class="list">
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row" ng-show='selected == 50'>
+                    <div class="col-md-12">
+                        <div id="events50">
+                            <p> 
+							<div class="form-group row">
+                                    <label class="col-sm-2 col-form-label" for="">Preisspanne:</label>
+                                    <div class="col-sm-2">
+                                        <input type="number" class="form-control" id="item-price-min" placeholder="0">
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <input type="number" class="form-control" id="item-price-max" placeholder="10000">
+                                    </div>
+                            </div>
+							</p>
+							<div class="input-group input-group-sm mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-sm">Suche</span>
+                                </div>
+                                <input type="text" class="form-control search" aria-label="Search" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+                            <p>
+                                <button type="button" class="btn btn-primary sort" data-sort="abr">
+                                    A - Z
+                                </button>
+                                <button type="button" class="btn btn-primary sort" data-sort="price">
+                                    Preis
+                                </button>
+                                <button type="button" class="btn btn-primary sort" data-sort="karmatype">
+                                    Karma
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '53')}" ng-click='selected=53'>
+                                    <b>Extrem</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '52')}" ng-click='selected=52'>
+                                    <b>Schlecht</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '51')}" ng-click='selected=51'>
+                                    <b>Neutral</b>
+                                </button>
+								<button class="btn btn-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '2')}" ng-click='selected=2'>
+                                    <b>Gut</b>
+                                </button>								
+                            </p>
+                            <table class="table events">
+                                <tr>
+                                    <th scope="col" class="sort" data-sort="abr">Name</th>
+                                    <th scope="col" class="sort" data-sort="price">Preis</th>
+                                    <th scope="col" class="sort" data-sort="karmatype">Karma</th>
+                                </tr>
+                                <tbody class="list">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+				<div class="row" ng-show='selected == 51'>
+                    <div class="col-md-12">
+                        <div id="events51">
+                            <p> 
+							<div class="form-group row">
+                                    <label class="col-sm-2 col-form-label" for="">Preisspanne:</label>
+                                    <div class="col-sm-2">
+                                        <input type="number" class="form-control" id="item-price-min" placeholder="0">
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <input type="number" class="form-control" id="item-price-max" placeholder="10000">
+                                    </div>
+                            </div>
+							</p>
+							<div class="input-group input-group-sm mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-sm">Suche</span>
+                                </div>
+                                <input type="text" class="form-control search" aria-label="Search" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+                            <p>
+                                <button type="button" class="btn btn-primary sort" data-sort="abr">
+                                    A - Z
+                                </button>
+                                <button type="button" class="btn btn-primary sort" data-sort="price">
+                                    Preis
+                                </button>
+                                <button type="button" class="btn btn-primary sort" data-sort="karmatype">
+                                    Karma
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '53')}" ng-click='selected=53'>
+                                    <b>Extrem</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '52')}" ng-click='selected=52'>
+                                    <b>Schlecht</b>
+                                </button>
+								<button class="btn btn-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '2')}" ng-click='selected=2'>
+                                    <b>Neutral</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '50')}" ng-click='selected=50'>
+                                    <b>Gut</b>
+                                </button>								
+                            </p>
+                            <table class="table events">
+                                <tr>
+                                    <th scope="col" class="sort" data-sort="abr">Name</th>
+                                    <th scope="col" class="sort" data-sort="price">Preis</th>
+                                    <th scope="col" class="sort" data-sort="karmatype">Karma</th>
+                                </tr>
+                                <tbody class="list">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+				<div class="row" ng-show='selected == 52'>
+                    <div class="col-md-12">
+                        <div id="events52">
+                            <p> 
+							<div class="form-group row">
+                                    <label class="col-sm-2 col-form-label" for="">Preisspanne:</label>
+                                    <div class="col-sm-2">
+                                        <input type="number" class="form-control" id="item-price-min" placeholder="0">
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <input type="number" class="form-control" id="item-price-max" placeholder="10000">
+                                    </div>
+                            </div>
+							</p>
+							<div class="input-group input-group-sm mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-sm">Suche</span>
+                                </div>
+                                <input type="text" class="form-control search" aria-label="Search" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+                            <p>
+                                <button type="button" class="btn btn-primary sort" data-sort="abr">
+                                    A - Z
+                                </button>
+                                <button type="button" class="btn btn-primary sort" data-sort="price">
+                                    Preis
+                                </button>
+                                <button type="button" class="btn btn-primary sort" data-sort="karmatype">
+                                    Karma
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '53')}" ng-click='selected=53'>
+                                    <b>Extrem</b>
+                                </button>
+								<button class="btn btn-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '2')}" ng-click='selected=2'>
+                                    <b>Schlecht</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '51')}" ng-click='selected=51'>
+                                    <b>Neutral</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '50')}" ng-click='selected=50'>
+                                    <b>Gut</b>
+                                </button>								
+                            </p>
+                            <table class="table events">
+                                <tr>
+                                    <th scope="col" class="sort" data-sort="abr">Name</th>
+                                    <th scope="col" class="sort" data-sort="price">Preis</th>
+                                    <th scope="col" class="sort" data-sort="karmatype">Karma</th>
+                                </tr>
+                                <tbody class="list">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+				<div class="row" ng-show='selected == 53'>
+                    <div class="col-md-12">
+                        <div id="events53">
+                            <p> 
+							<div class="form-group row">
+                                    <label class="col-sm-2 col-form-label" for="">Preisspanne:</label>
+                                    <div class="col-sm-2">
+                                        <input type="number" class="form-control" id="item-price-min" placeholder="0">
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <input type="number" class="form-control" id="item-price-max" placeholder="10000">
+                                    </div>
+                            </div>
+							</p>
+							<div class="input-group input-group-sm mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-sm">Suche</span>
+                                </div>
+                                <input type="text" class="form-control search" aria-label="Search" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+                            <p>
+                                <button type="button" class="btn btn-primary sort" data-sort="abr">
+                                    A - Z
+                                </button>
+                                <button type="button" class="btn btn-primary sort" data-sort="price">
+                                    Preis
+                                </button>
+                                <button type="button" class="btn btn-primary sort" data-sort="karmatype">
+                                    Karma
+                                </button>
+								<button class="btn btn-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '2')}" ng-click='selected=2'>
+                                    <b>Extrem</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '52')}" ng-click='selected=52'>
+                                    <b>Schlecht</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '51')}" ng-click='selected=51'>
+                                    <b>Neutral</b>
+                                </button>
+								<button class="btn btn-outline-secondary btn-sm"style="float: right;" ng-class="{'active': (selected == '50')}" ng-click='selected=50'>
+                                    <b>Gut</b>
+                                </button>								
+                            </p>
+                            <table class="table events">
+                                <tr>
+                                    <th scope="col" class="sort" data-sort="abr">Name</th>
+                                    <th scope="col" class="sort" data-sort="price">Preis</th>
+                                    <th scope="col" class="sort" data-sort="karmatype">Karma</th>
+                                </tr>
+                                <tbody class="list">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+				
             </div>
         </div>
         <div class="container">
@@ -266,6 +979,147 @@
 
             itemList = new List('items', options, itemData);
         });
+		
+		let itemList10 = null;
+        $.getJSON(itemListURL, function(data) {
+            var options = {
+                valueNames: ['abr', 'price', 'category'],
+                item: '<tr><td class="abr" scope="row"></td><td class="price"></td><td class="category"></td></tr>'
+            };
+
+            var itemData = [];
+			var cat10 = ["Nahrung", "Fine Meals", "Fleisch", "Früchte", "Lavish Meals", "Mahlzeiten", "Nahrung", "Pflazenmasse", "Säfte und Süßigkeiten", "Tierfutter", "Tierische Produkte", "Vegetarisch"]; 
+            $.each(data.items, function(index, value) {
+                for(var i = 0; i < cat10.length; i++) { 
+				
+					if (value["category"] == cat10[i]) {
+						itemData.push(value);
+					}
+				}
+            });
+
+            itemList10 = new List('items10', options, itemData);
+        });
+		let itemList11 = null;
+        $.getJSON(itemListURL, function(data) {
+            var options = {
+                valueNames: ['abr', 'price', 'category'],
+                item: '<tr><td class="abr" scope="row"></td><td class="price"></td><td class="category"></td></tr>'
+            };
+
+            var itemData = [];
+			var cat11 = ["Kleigung","Kopfbekleidung","Künstlich"]; 
+            $.each(data.items, function(index, value) {
+                for(var i = 0; i < cat11.length; i++) { 
+				
+					if (value["category"] == cat11[i]) {
+						itemData.push(value);
+					}
+				}
+            });
+
+            itemList11 = new List('items11', options, itemData);
+        });
+		let itemList12 = null;
+        $.getJSON(itemListURL, function(data) {
+            var options = {
+                valueNames: ['abr', 'price', 'category'],
+                item: '<tr><td class="abr" scope="row"></td><td class="price"></td><td class="category"></td></tr>'
+            };
+
+            var itemData = [];
+			var cat12 = ["Artefakte","Fernkampfwaffen","Granaten","GW Granaten","Nahkampfwaffen","Sicherheit"]; 
+            $.each(data.items, function(index, value) {
+                for(var i = 0; i < cat12.length; i++) { 
+				
+					if (value["category"] == cat12[i]) {
+						itemData.push(value);
+					}
+				}
+            });
+
+            itemList12 = new List('items12', options, itemData);
+        });
+		let itemList13 = null; 
+        $.getJSON(itemListURL, function(data) {
+            var options = {
+                valueNames: ['abr', 'price', 'category'],
+                item: '<tr><td class="abr" scope="row"></td><td class="price"></td><td class="category"></td></tr>'
+            };
+
+            var itemData = [];
+			var cat13 = ["Drogen","Künstlich","Medizin","Natürlich"]; 
+            $.each(data.items, function(index, value) {
+                for(var i = 0; i < cat13.length; i++) { 
+				
+					if (value["category"] == cat13[i]) {
+						itemData.push(value);
+					}
+				}
+            });
+
+            itemList13 = new List('items13', options, itemData);
+        });
+		let itemList14 = null;
+        $.getJSON(itemListURL, function(data) {
+            var options = {
+                valueNames: ['abr', 'price', 'category'],
+                item: '<tr><td class="abr" scope="row"></td><td class="price"></td><td class="category"></td></tr>'
+            };
+
+            var itemData = [];
+			var cat14 = ["Animal","Ei (befr.)","Ei (unbefr.)",]; 
+            $.each(data.items, function(index, value) {
+                for(var i = 0; i < cat14.length; i++) { 
+				
+					if (value["category"] == cat14[i]) {
+						itemData.push(value);
+					}
+				}
+            });
+
+            itemList14 = new List('items14', options, itemData);
+        });
+		let itemList15 = null;
+        $.getJSON(itemListURL, function(data) {
+            var options = {
+                valueNames: ['abr', 'price', 'category'],
+                item: '<tr><td class="abr" scope="row"></td><td class="price"></td><td class="category"></td></tr>'
+            };
+
+            var itemData = [];
+			var cat15 = ["Entspannung","Möbel","Kunst"]; 
+            $.each(data.items, function(index, value) {
+                for(var i = 0; i < cat15.length; i++) { 
+				
+					if (value["category"] == cat15[i]) {
+						itemData.push(value);
+					}
+				}
+            });
+
+            itemList15 = new List('items15', options, itemData);
+        });
+		let itemList16 = null;
+        $.getJSON(itemListURL, function(data) {
+            var options = {
+                valueNames: ['abr', 'price', 'category'],
+                item: '<tr><td class="abr" scope="row"></td><td class="price"></td><td class="category"></td></tr>'
+            };
+
+            var itemData = [];
+			var cat16 = ["Gegenstände","Hergestellt","Leder","Produktion","Rohstoffe","Spezial","Steinblöcke","Strom","Temperatur","Textilien","Verschiedenes"]; 
+            $.each(data.items, function(index, value) {
+                for(var i = 0; i < cat16.length; i++) { 
+				
+					if (value["category"] == cat16[i]) {
+						itemData.push(value);
+					}
+				}
+            });
+
+            itemList16 = new List('items16', options, itemData);
+        });
 
         let eventList = null;
         $.getJSON(eventListURL, function(data) {
@@ -284,6 +1138,71 @@
             eventList = new List('events', options, eventData);
         });
 		
+		let eventList50 = null;
+        $.getJSON(eventListURL, function(data) {
+            var options = {
+                valueNames: ['abr', 'price', 'karmatype'],
+                item: '<tr><td class="abr" scope="row"></td><td class="price"></td><td class="karmatype"></td></tr>'
+            };
+
+            var eventData = [];
+            $.each(data.incitems, function(index, value) {
+                if (value["karmatype"] == "Good") {
+                    eventData.push(value);
+                }
+            });
+
+            eventList50 = new List('events50', options, eventData);
+        });
+		let eventList51 = null;
+        $.getJSON(eventListURL, function(data) {
+            var options = {
+                valueNames: ['abr', 'price', 'karmatype'],
+                item: '<tr><td class="abr" scope="row"></td><td class="price"></td><td class="karmatype"></td></tr>'
+            };
+
+            var eventData = [];
+            $.each(data.incitems, function(index, value) {
+                if (value["karmatype"] == "Neutral") {
+                    eventData.push(value);
+                }
+            });
+
+            eventList51 = new List('events51', options, eventData);
+        });
+		let eventList52 = null;
+        $.getJSON(eventListURL, function(data) {
+            var options = {
+                valueNames: ['abr', 'price', 'karmatype'],
+                item: '<tr><td class="abr" scope="row"></td><td class="price"></td><td class="karmatype"></td></tr>'
+            };
+
+            var eventData = [];
+            $.each(data.incitems, function(index, value) {
+                if (value["karmatype"] == "Bad") {
+                    eventData.push(value);
+                }
+            });
+
+            eventList52 = new List('events52', options, eventData);
+        });
+		let eventList53 = null;
+        $.getJSON(eventListURL, function(data) {
+            var options = {
+                valueNames: ['abr', 'price', 'karmatype'],
+                item: '<tr><td class="abr" scope="row"></td><td class="price"></td><td class="karmatype"></td></tr>'
+            };
+
+            var eventData = [];
+            $.each(data.incitems, function(index, value) {
+                if (value["karmatype"] == "Doom") {
+                    eventData.push(value);
+                }
+            });
+
+            eventList53 = new List('events53', options, eventData);
+        });
+		
 		let traitList = null;
         $.getJSON(traitListURL, function(data) {
             var options = {
@@ -298,6 +1217,23 @@
 
             traitList = new List('traits', options, traitData);
         });
+		
+		<!-- let traitList2 = null; -->
+        <!-- $.getJSON(traitListURL, function(data) { -->
+            <!-- var options = { -->
+                <!-- valueNames: ['abr', 'category2'], -->
+                <!-- item: '<tr><td class="abr" scope="row"></td><td class="category2"></td>' -->
+            <!-- }; -->
+
+            <!-- var traitData = []; -->
+            <!-- $.each(data.traits, function(index, value) { -->
+                <!-- if (value["category2"] == "Schönheit") { -->
+                    <!-- traitData.push(value); -->
+                <!-- } -->
+            <!-- }); -->
+
+            <!-- traitList2 = new List('traits2', options, traitData); -->
+        <!-- }); -->
 
         $("#item-price-min").keyup(function() {
             updateItemFilter();
