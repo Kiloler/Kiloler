@@ -63,6 +63,9 @@
 									<button id="test" class="btn btn-success btn-lg" ng-class="{'active': (selected == '1')}" ng-click='selected=1'>
 										<b>Befehle</b>
 									</button>
+									<button id="test" class="btn btn-success btn-lg" ng-class="{'active': (selected == '2')}" ng-click='selected=2'>
+										<b>Beispiele</b>
+									</button>
 									<a href="index.html" class="btn btn-light active btn-sm" role="button" aria-pressed="true">zurück</a>
                                 </div>
                             </form>
@@ -99,34 +102,50 @@
                         </div>
                     </div>
                 </div>
-				<div class="row" ng-show='selected == 2'>
+				
+                <div class="row" ng-show='selected == 2'>
                     <div class="col-md-12">
-                        <div id="traits">
-                            <div class="input-group input-group-sm mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="inputGroup-sizing-sm">Suche</span>
-                                </div>
-                                <input type="text" class="form-control search" aria-label="Search" aria-describedby="inputGroup-sizing-sm">
-                            </div>
-                            <p>
-                                <button type="button" class="btn btn-primary sort" data-sort="abr">
-                                    A - Z
-                                </button>
-                                <button type="button" class="btn btn-primary sort" data-sort="category2">
-                                    Kategorie
-                                </button>
-                            </p>
-                            <table class="table traits">
-                                <tr>
-                                    <th scope="col" class="sort" data-sort="abr">Name</th>
-                                    <th scope="col" class="sort" data-sort="category2">Kategorie</th>
-                                </tr>
-                                <tbody class="list">
-                                </tbody>
-                            </table>
+                        <div id="Beispiele">
+							<table class="table table-borderless">
+							    	
+								<h1 class="display-20">In diesem Abschnitt werden Beispiele für mögliche Befehle aufgelistet.</h1>
+								<p><b>Beispiel 1: !kaufen</b>
+									<br>Ihr möchtet beispielsweise 20 Bier kaufen? Das ist ganz einfach, so müsst ihr nur
+									<b><i>!kaufen bier 20</b></i> eingeben und schon werden 20 Bier Ingame geliefert. 
+									Sucht euch einfach das Item aus der Liste aus, was ihr mir schicken möchtet. 
+									Der gleiche Befehl wird auch benutzt, solltet ihr mir Events schicken wollen.
+									</br>
+								</p>
+								<p><b>Beispiel 2: !schenke</b>
+									<br>Du möchtest einem anderen Zuschauer (beispielsweise Günther) 200 Münzen zukommen lassen? Dann musst du nur 
+									<b><i>!schenke Günther 20</b></i> eingeben und werden Günther 200 Münzen übertragen. 
+									</br>
+								</p>
+								<p><b>Beispiel 3: Informationen zum eigenen Pawn</b>
+									<br>Dich interssieren die Eigenschaften, Statuswerte und/oder Kleidungsstücke, die dein Pawn bei sich tragen?
+									Kein Problem, frag mich einfach im Chat danach, dann zeige ich sie dir gerne. 
+									Doch kannst du das auch ganz leicht selber nachgucken. Dafür stehen dir die Befehle: <b><i>!mypawnstory</b></i>, 
+									<b><i>!mypawnskills</b></i>, <b><i>!mypawngear</b></i>, <b><i>!mypawnhealth</b></i> und <b><i>!mypawnbody</b></i>
+									zur Verfügung. 
+									</br>
+								</p>
+								<p><b>Beispiel 4: Traits des Pawns bearbeiten</b>
+									<br>Die aktuellen Traits deines Pawns gefallen dir nicht? Auch dieses Problem lässt sich lösen.
+									Dafür stehen dir zwei Events zur Verfügung. Zum einen kannst du einen Trait entfernen mittels 
+									<b><i>!kaufen removetrait [Name]</b></i>. Gib einfach an, welcher der Traits entfernt werden soll. 
+									Desweiteren kannst du deinem Pawn bis zu vier Traits angeben. Dies geschieht mit
+									<b><i>!kaufen trait [Name]</b></i>. Mit diesem Befehl erhält dein Pawn den von dir angegebenen Trait. 
+									Eine Auflistung aller möglichen Traits findest du auf der Startseite unter "Traits" (eigentlich nicht zu übersehen). 
+									</br>
+								</p>
+								
+								
+							
+							</table>
                         </div>
                     </div>
                 </div>
+				
             </div>
         </div>
         <div class="container">
