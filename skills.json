@@ -1,0 +1,42 @@
+{
+		"skills" : [
+		{
+			"abr": "Fernkampf"
+		},
+		{
+			"abr": "Nahkampf"
+		},
+		{
+			"abr": "Konstruktion"
+		},
+		{
+			"abr": "Bergbau"
+		},
+		{
+			"abr": "Kochen"
+		},
+		{
+			"abr": "Pflanzen"
+		},
+		{
+			"abr": "Tiere"
+		},
+		{
+			"abr": "Handwerk"
+		},
+		{
+			"abr": "Kunst"
+		},
+		{
+			"abr": "Medizin"
+		},
+		{
+			"abr": "Sozial"
+		},
+		{
+			"abr": "Geistige Arbeit"
+		}
+		],
+		"total": 12
+}
+		
