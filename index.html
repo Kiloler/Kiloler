@@ -15,6 +15,7 @@
         const itemListURL = "https://raw.githubusercontent.com/Kiloler/Kiloler/master/itemlist.json";
         const eventListURL = "https://raw.githubusercontent.com/Kiloler/Kiloler/master/eventlist.json";
 		const traitListURL = "https://raw.githubusercontent.com/Kiloler/Kiloler.github.io/master/traitlist.json";
+		const skillListURL = "https://raw.githubusercontent.com/Kiloler/Kiloler.github.io/master/skills.json";
     </script>
 </head>
 
@@ -62,6 +63,9 @@
                                     </button>
 									<button class="btn btn-info" ng-class="{'active': (selected == '3')}" ng-click='selected=3'>
                                         <b>Traits</b>
+                                    </button>
+									<button class="btn btn-info" ng-class="{'active': (selected == '4')}" ng-click='selected=4'>
+                                        <b>Skills</b>
                                     </button>
                                 </div>
                                 
@@ -214,6 +218,31 @@
                                 <tr>
                                     <th scope="col" class="sort" data-sort="abr">Name</th>
                                     <th scope="col" class="sort" data-sort="category2">Kategorie</th>
+                                </tr>
+                                <tbody class="list">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+				<div class="row" ng-show='selected == 4'>
+                    <div class="col-md-12">
+                        <div id="skills">
+                            <div class="input-group input-group-sm mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-sm">Suche</span>
+                                </div>
+                                <input type="text" class="form-control search" aria-label="Search" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+                            <p>
+                                <button type="button" class="btn btn-primary sort" data-sort="abr">
+                                    A - Z
+                                </button>
+                            </p>
+                            <table class="table skills">
+                                <tr>
+                                    <th scope="col" class="sort" data-sort="abr">Name</th>
+       
                                 </tr>
                                 <tbody class="list">
                                 </tbody>
@@ -988,7 +1017,7 @@
             };
 
             var itemData = [];
-			var cat10 = ["Nahrung", "Fine Meals", "Fleisch", "Früchte", "Lavish Meals", "Mahlzeiten", "Nahrung", "Pflazenmasse", "Säfte und Süßigkeiten", "Tierfutter", "Tierische Produkte", "Vegetarisch","Processed meat","Processed fruits","Processed grains","Processed sweets","Processed vegetables","Snacks"]; 
+			var cat10 = ["Nahrung", "Fine Meals", "Fleisch", "Früchte", "Lavish Meals", "Mahlzeiten", "Nahrung", "Pflazenmasse", "Säfte und Süßigkeiten", "Tierfutter", "Tierische Produkte", "Vegetarisch"]; 
             $.each(data.items, function(index, value) {
                 for(var i = 0; i < cat10.length; i++) { 
 				
@@ -1008,7 +1037,7 @@
             };
 
             var itemData = [];
-			var cat11 = ["Kleigung","Kopfbekleidung","Künstlich","Mopp"]; 
+			var cat11 = ["Kleigung","Kopfbekleidung","Künstlich"]; 
             $.each(data.items, function(index, value) {
                 for(var i = 0; i < cat11.length; i++) { 
 				
@@ -1028,7 +1057,7 @@
             };
 
             var itemData = [];
-			var cat12 = ["Artefakte","Fernkampfwaffen","Granaten","GW Granaten","Nahkampfwaffen","Sicherheit","JI weapons","TE weapons","YP weapons"]; 
+			var cat12 = ["Artefakte","Fernkampfwaffen","Granaten","GW Granaten","Nahkampfwaffen","Sicherheit"]; 
             $.each(data.items, function(index, value) {
                 for(var i = 0; i < cat12.length; i++) { 
 				
@@ -1218,22 +1247,20 @@
             traitList = new List('traits', options, traitData);
         });
 		
-		<!-- let traitList2 = null; -->
-        <!-- $.getJSON(traitListURL, function(data) { -->
-            <!-- var options = { -->
-                <!-- valueNames: ['abr', 'category2'], -->
-                <!-- item: '<tr><td class="abr" scope="row"></td><td class="category2"></td>' -->
-            <!-- }; -->
+		let skillList = null;
+        $.getJSON(skillListURL, function(data) {
+            var options = {
+                valueNames: ['abr'],
+                item: '<tr><td class="abr" scope="row">'
+            };
 
-            <!-- var traitData = []; -->
-            <!-- $.each(data.traits, function(index, value) { -->
-                <!-- if (value["category2"] == "Schönheit") { -->
-                    <!-- traitData.push(value); -->
-                <!-- } -->
-            <!-- }); -->
+            var skillData = [];
+            $.each(data.skills, function(index, value) {
+                skillData.push(value);
+            });
 
-            <!-- traitList2 = new List('traits2', options, traitData); -->
-        <!-- }); -->
+            skillList = new List('skills', options, skillData);
+        });
 
         $("#item-price-min").keyup(function() {
             updateItemFilter();
